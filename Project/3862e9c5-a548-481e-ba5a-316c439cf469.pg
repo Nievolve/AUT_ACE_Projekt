@@ -1,0 +1,30 @@
+﻿.PROGRAM main()
+;
+; ABSTRACT:  
+;
+; INPUTS:       
+; local location pickedup = TRANS(pos1.x, )
+; OUTPUTS:      
+;
+; SIDE EFFECTS: 
+;
+; DATA STRUCT:  
+;
+; MISC:  Program created in version 4.7.3.100
+;
+;* Copyright (c) 2025 by {company name}
+        ATTACH ()
+        WHILE TRUE DO
+            MOVE home ;startposition
+            SPEED 10 ALWAYS
+            APPRO pos1_pickup, 50
+            MOVES pos1_pickup ;rakt till position 1
+            ;MOVE pos1_pickedup
+            APPRO pos2_dropdown, 50
+            MOVE pos2_dropdown ; till position 2
+            ;MOVE pos2_dropdown
+            MOVE home ;återgå hem
+
+        END
+.END
+

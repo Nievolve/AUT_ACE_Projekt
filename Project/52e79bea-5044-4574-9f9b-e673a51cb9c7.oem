@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sysmac schemaVersion="1">
+  <Entity type="Solution" subtype="" id="52e79bea-5044-4574-9f9b-e673a51cb9c7" name="first" version="0" dateCreated="11/19/2025 09:41:12" trackingId="0d48a2d3-dfb4-4e93-8e10-14721ed08b7b">
+    <AccessInfos />
+    <ChildEntities>
+      <Entity type="EntityDefinedColor" subtype="" id="aa2603cc-c2f6-495d-aacb-a0f7f8db1031" name="EntityDefinedColor" version="0" dateCreated="11/19/2025 09:41:12" trackingId="fd89f50c-cd0d-4a19-845c-761bf4fc4483">
+        <AccessInfos />
+        <ChildEntities />
+      </Entity>
+      <Entity type="EntityDefinedCheckBox" subtype="" id="293a2519-ed65-475f-9df0-c3c709016191" name="EntityDefinedCheckBox" version="0" dateCreated="11/19/2025 09:41:12" trackingId="c84287c7-0338-48c7-b2fe-0274a1fc4e67">
+        <AccessInfos />
+        <ChildEntities />
+      </Entity>
+      <Entity type="ProjectShortcut" subtype="" id="403a9605-66cc-4bbb-bdc3-ba2d4516cbe2" name="Project shortcut items" version="0" dateCreated="11/19/2025 09:41:12" dateLastModified="11/19/2025 09:41:12" trackingId="43a5e211-e8a6-4f26-8547-765f8fa683eb" SDName="Project shortcut items">
+        <AccessInfos />
+        <ChildEntities />
+      </Entity>
+      <Entity type="VirtualDisplaySetting" subtype="" id="3ef6b6b6-ef15-4695-807d-f57d5c287502" name="3DVisualizerSettings" version="0" dateCreated="11/19/2025 09:41:12" dateLastModified="11/19/2025 09:41:12" trackingId="f6bfadcb-9357-4128-86a7-3e7f592578f3">
+        <AccessInfos />
+        <ChildEntities />
+      </Entity>
+      <Entity type="Sharing" subtype="" id="73fc35d6-27c0-43e5-a950-22210c89b67a" name="EntitySharing" version="0" dateCreated="11/19/2025 09:41:12" dateLastModified="11/19/2025 09:41:12" trackingId="6606253e-da6c-443f-ba71-4870855a8074" SDName="Sharing setting between devices">
+        <AccessInfos />
+        <ChildEntities />
+      </Entity>
+      <Entity type="Watch" subtype="MCWatchSubType" id="1b26b90f-cfe7-4424-8103-78359a868463" name="Watch (Project)" version="0" dateCreated="11/19/2025 09:41:12" trackingId="abb77f78-c63d-43e0-a7fb-5ee84fa04f7e">
+        <AccessInfos />
+        <ChildEntities />
+      </Entity>
+      <Entity type="Device" subtype="AdeptCtrlr" id="ca1a7ef9-c3ee-4fdf-87ed-01616feeac0a" name="i4-350L_0" version="0" dateCreated="11/19/2025 09:41:12" dateLastModified="11/19/2025 09:41:13" trackingId="03ce7e0b-a6f7-40b0-b43d-d1852d68a18a" hash="c4d2c60db73400b8a8b3f917191eb2fe" DHS="1ff115234ed6defd5c7227179e0d72ad" TH="f5a260434827f0762f89c14b5aa5997f">
+        <AccessInfos />
+        <ChildEntities>
+          <Entity type="AdeptCtrlrSettings" subtype="" id="11352c3d-6c2d-4175-84de-401587def7ad" name="Controller Settings" version="0" dateCreated="11/19/2025 09:41:12" dateLastModified="11/19/2025 10:43:41" trackingId="e4e17793-343b-4627-897e-ddeec9368ddc" DN="Controller Settings" hash="b1f5cf556e3eb82bfc9f98ebb525112f">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="AdeptCtrlrSaveConfiguration" subtype="" id="87cb5eea-a238-4de4-9b06-32e39e8a6b61" name="Save Configuration" version="0" dateCreated="11/19/2025 09:41:12" dateLastModified="11/19/2025 09:41:12" trackingId="64a36e4c-c397-4416-b689-1f2aef76dec7" DN="Save Configuration">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="AdeptCtrlrMonitorWindow" subtype="" id="53b26972-cb6d-46de-a0b3-d3a5c3395c3b" name="Monitor Window" version="0" dateCreated="11/19/2025 09:41:12" dateLastModified="11/19/2025 09:41:12" trackingId="dc5bbd7d-3c5e-4835-93a5-cb180b805db6" DN="Monitor Window">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+          <Entity type="Group" subtype="AdeptRobots" id="9f6b0212-c9c5-4a9d-9f0f-7b17d7380042" name="Robots" version="0" dateCreated="11/19/2025 09:41:12" trackingId="b9d3fcaa-fe86-4f6e-a38e-401ded2b500b" DN="Robots">
+            <AccessInfos />
+            <ChildEntities>
+              <Entity type="AdeptRobot" subtype="i4Robot350L_180" id="4deedfc4-5836-4021-9fa3-d1e72e98f272" name="R1i4Robot350L_180" version="0" dateCreated="11/19/2025 09:41:12" dateLastModified="11/19/2025 12:37:04" trackingId="beed17b5-492b-4e57-a0b6-897859846202" DN="R1i4Robot350L_180" hash="db23d32ef9e2de45f4c1de008713c053">
+                <AccessInfos />
+                <ChildEntities>
+                  <Entity type="AdeptEndEffector" subtype="" id="953c56ba-c91e-4646-81c1-fc217e930c8e" name="IO EndEffector0" version="0" dateCreated="11/19/2025 09:41:13" dateLastModified="11/19/2025 09:41:13" trackingId="7f29f86d-4b8f-45d2-a3a7-8d64ee033f7a" DN="IO EndEffector0" hash="1687568bf2444bd25ceebd433a96ed35">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                </ChildEntities>
+              </Entity>
+            </ChildEntities>
+          </Entity>
+          <Entity type="Group" subtype="AdeptCtrlrUserModules" id="a06d5770-5314-4b88-95e3-5d94997d0686" name="V+ Modules" version="0" dateCreated="11/19/2025 09:41:12" trackingId="d17bdc1b-850c-4084-bdff-6c7f6762c2e9" DN="V+ Modules">
+            <AccessInfos />
+            <ChildEntities>
+              <Entity type="AdeptCtrlrUserModule" subtype="VPlusModule" id="00bafec1-baf5-4199-b056-96a096718a33" name="main" version="0" dateCreated="11/19/2025 09:48:23" dateLastModified="11/19/2025 12:37:04" trackingId="f816de4a-d293-4a4d-b118-ffbc557585ed" DN="main" hash="6585201445acfe7426dcb8b3e5b26e5f">
+                <AccessInfos />
+                <ChildEntities>
+                  <Entity type="VPlusModule" subtype="VPlusProgram" id="3862e9c5-a548-481e-ba5a-316c439cf469" name="main" version="0" dateCreated="11/19/2025 09:48:23" dateLastModified="11/19/2025 12:37:04" trackingId="ae942e45-8abb-4bc2-bdca-e17bdb635a10" DN="main" hash="719c20f8a9866753451b19a6cd88722d">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                </ChildEntities>
+              </Entity>
+            </ChildEntities>
+          </Entity>
+          <Entity type="AdeptCtrlrVariables" subtype="" id="e7b671cb-78fd-446d-9cad-b1a574e5b624" name="Variables" version="0" dateCreated="11/19/2025 09:41:12" dateLastModified="11/19/2025 12:37:04" trackingId="eba7c39d-369e-44e7-9a94-59cc46e26767" DN="Variables" hash="f4e07a3b64a9ce9059ec6faa094c4f19">
+            <AccessInfos />
+            <ChildEntities />
+          </Entity>
+        </ChildEntities>
+      </Entity>
+    </ChildEntities>
+  </Entity>
+</sysmac>
