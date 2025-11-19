@@ -1,0 +1,8 @@
+﻿.PROGRAM picknplace(y)
+
+        MOVE y
+BREAK 
+
+
+.END
+

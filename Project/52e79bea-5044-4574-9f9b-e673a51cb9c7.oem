@@ -88,6 +88,10 @@
                     <AccessInfos />
                     <ChildEntities />
                   </Entity>
+                  <Entity type="VPlusModule" subtype="VPlusProgram" id="327f24a1-b44c-48e9-b679-d08b5656703a" name="picknplace" version="0" dateCreated="11/19/2025 15:24:16" dateLastModified="11/19/2025 15:30:06" trackingId="97ecf587-df52-4b43-a9eb-e0d98d35f14a" DN="picknplace" hash="ba30a158c2f2b42eebb9d9323aba923b">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
                 </ChildEntities>
               </Entity>
             </ChildEntities>
