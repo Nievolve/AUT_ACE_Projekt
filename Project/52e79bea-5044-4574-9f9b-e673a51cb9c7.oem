@@ -30,7 +30,7 @@
       <Entity type="Device" subtype="AdeptCtrlr" id="ca1a7ef9-c3ee-4fdf-87ed-01616feeac0a" name="i4-350L_0" version="0" dateCreated="11/19/2025 09:41:12" dateLastModified="11/19/2025 09:41:13" trackingId="03ce7e0b-a6f7-40b0-b43d-d1852d68a18a" hash="c4d2c60db73400b8a8b3f917191eb2fe" DHS="1ff115234ed6defd5c7227179e0d72ad" TH="f5a260434827f0762f89c14b5aa5997f">
         <AccessInfos />
         <ChildEntities>
-          <Entity type="AdeptCtrlrSettings" subtype="" id="11352c3d-6c2d-4175-84de-401587def7ad" name="Controller Settings" version="0" dateCreated="11/19/2025 09:41:12" dateLastModified="11/19/2025 10:43:41" trackingId="e4e17793-343b-4627-897e-ddeec9368ddc" DN="Controller Settings" hash="b1f5cf556e3eb82bfc9f98ebb525112f">
+          <Entity type="AdeptCtrlrSettings" subtype="" id="11352c3d-6c2d-4175-84de-401587def7ad" name="Controller Settings" version="0" dateCreated="11/19/2025 09:41:12" dateLastModified="11/19/2025 14:31:32" trackingId="e4e17793-343b-4627-897e-ddeec9368ddc" DN="Controller Settings" hash="2d35739ad7b9c937a932492822aca071">
             <AccessInfos />
             <ChildEntities />
           </Entity>
@@ -68,9 +68,31 @@
                   </Entity>
                 </ChildEntities>
               </Entity>
+              <Entity type="AdeptCtrlrUserModule" subtype="VPlusModule" id="0abbf051-efec-4601-a0c6-b2ebebffd8ac" name="lektion" version="0" dateCreated="11/19/2025 13:00:58" dateLastModified="11/19/2025 13:01:41" trackingId="5a05008a-91ed-4908-87f0-d6fa10a9e0fa" DN="lektion" hash="3148d71b1b193a053b64b7f6c16b7101">
+                <AccessInfos />
+                <ChildEntities>
+                  <Entity type="VPlusModule" subtype="VPlusProgram" id="e665eaf3-193f-4818-86a4-3d85cce79f60" name="lektion" version="0" dateCreated="11/19/2025 13:00:58" dateLastModified="11/19/2025 14:31:32" trackingId="e827ac0e-82e4-41ea-b043-3573abf0605a" DN="lektion" hash="4d54189b426a0f9fe9616e905bbfe3a9">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                </ChildEntities>
+              </Entity>
+              <Entity type="AdeptCtrlrUserModule" subtype="VPlusModule" id="3f8c1e6d-d96f-40cd-9c80-e3d995c04672" name="workshop" version="0" dateCreated="11/19/2025 13:32:40" dateLastModified="11/19/2025 15:21:36" trackingId="16a90f3e-3875-4bb3-b154-eb448f89a915" DN="workshop" hash="1ce6435a7da995c12960180597c7deb5">
+                <AccessInfos />
+                <ChildEntities>
+                  <Entity type="VPlusModule" subtype="VPlusProgram" id="085c7f42-0e25-44ac-b248-3069fa565419" name="workshop" version="0" dateCreated="11/19/2025 13:32:40" dateLastModified="11/19/2025 15:21:36" trackingId="15fa21e4-f143-4310-a670-523f88738a23" DN="workshop" hash="b27857174fd43b0a4016449fb8ad147c">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                  <Entity type="VPlusModule" subtype="VPlusProgram" id="5e203aa3-45e6-4c65-a34e-846984d159da" name="square" version="0" dateCreated="11/19/2025 14:37:55" dateLastModified="11/19/2025 15:21:36" trackingId="1e47f518-c7f4-4371-bd6f-8df566bb40ac" DN="square" hash="12c3ffd03ab3a8fba6d3d3cc6982fe40">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                </ChildEntities>
+              </Entity>
             </ChildEntities>
           </Entity>
-          <Entity type="AdeptCtrlrVariables" subtype="" id="e7b671cb-78fd-446d-9cad-b1a574e5b624" name="Variables" version="0" dateCreated="11/19/2025 09:41:12" dateLastModified="11/19/2025 12:37:04" trackingId="eba7c39d-369e-44e7-9a94-59cc46e26767" DN="Variables" hash="f4e07a3b64a9ce9059ec6faa094c4f19">
+          <Entity type="AdeptCtrlrVariables" subtype="" id="e7b671cb-78fd-446d-9cad-b1a574e5b624" name="Variables" version="0" dateCreated="11/19/2025 09:41:12" dateLastModified="11/19/2025 15:21:36" trackingId="eba7c39d-369e-44e7-9a94-59cc46e26767" DN="Variables" hash="43f028b07f449648351902f3059ba7cc">
             <AccessInfos />
             <ChildEntities />
           </Entity>

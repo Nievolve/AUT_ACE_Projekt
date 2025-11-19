@@ -1,0 +1,25 @@
+﻿.PROGRAM workshop()
+
+;workshop 1 : done
+
+
+; program
+
+
+        ATTACH ()
+        SPEED 50 MONITOR ALWAYS
+
+        WHILE TRUE DO
+            FOR i = 0 TO 3
+                CALL square(kub[i])
+                IF i == 1 THEN
+                
+                    APPRO pickdown, 50
+                    WAIT.EVENT , 1
+
+
+                END
+            END
+        END
+.END
+

@@ -1,0 +1,7 @@
+﻿.PROGRAM square(position)
+
+        MOVES position
+        BREAK
+
+.END
+
