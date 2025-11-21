@@ -2,7 +2,8 @@
 För kursen Robot och Robotsystem
 
 # Robot XYZ values
-Z.Ffl = Z.Down =
+Z.Ffl = 
+Z.Down =
 
 Standard Position =
 X,284.134 
