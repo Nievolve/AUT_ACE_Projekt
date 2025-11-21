@@ -1,0 +1,10 @@
+﻿.PROGRAM place3(place)
+        APPROS place, 50
+        WAIT.EVENT , 1
+        MOVE place
+        BREAK
+        DEPART 50
+
+
+.END
+

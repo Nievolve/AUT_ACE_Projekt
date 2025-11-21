@@ -1,4 +1,4 @@
-﻿.PROGRAM pick(pick)
+﻿.PROGRAM pick3(pick)
         APPRO pick, 50
         WAIT.EVENT , 1
         MOVE pick

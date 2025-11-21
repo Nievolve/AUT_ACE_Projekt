@@ -14,18 +14,14 @@
 ;
 ;* Copyright (c) 2025 by {company name}
         ATTACH ()
+        SPEED 100 MONITOR ALWAYS
+        SPEED 10 ALWAYS
         WHILE TRUE DO
-            SPEED 10 ALWAYS
-            MOVE home ;startposition
-            APPRO pos1_pickup, 50
-            WAIT.EVENT , 1
-            MOVES pos1_pickup ;rakt till position 1
-            ;MOVE pos1_pickedup
-            APPRO pos2_dropdown, 50
-            WAIT.EVENT , 1
-            MOVE pos2_dropdown ; till position 2
-            ;MOVE pos2_dropdown
-            MOVE home ;återgå hem
+            FOR i = 0 TO 3
+                MOVE kub[i]
+            TYPE "Pos", i, "nådd"
+            END
+
         END
 
 .END
