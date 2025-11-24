@@ -1,38 +1,32 @@
-﻿.PROGRAM square3(position, i)
+﻿.PROGRAM loc_move(position, i)
+; Utför förflyttning
 
+        IF i == 0 THEN
 
-
-
-        ;IF i == 1 THEN
-         ;CALL pick(position)
-        ; TYPE "Position: ", i
-    ;BREAK
-    ;END
-    ;IF i == 3 THEN
-    ;       CALL place(position)
-    ;    TYPE "Position: ", i
-    ;   BREAK
-    ;END
-    ;IF i == NOT 1 OR NOT 3 THEN
-    ;       MOVE position
-    ;  TYPE "Position: ", i
-    ; BREAK
-    ;END
-
-        CASE i OF
-          VALUE 1:
-            CALL pick(position)
-            TYPE "Position: ", i
-            BREAK
-          VALUE 3:
-            CALL place(position)
-            TYPE "Position: ", i
-            BREAK
-          VALUE 0, 2:
-            MOVE position
-            TYPE "Position: ", i
+            MOVES position
             BREAK
         END
+        IF i == 1 THEN
+            APPROS position, 50
+            MOVES position
+            BREAK
+; utför uppplocka
+            WAIT.EVENT , 0.2
+            DEPART 50
+        END
+        IF i == 2 THEN
+            MOVES position
+            BREAK
+        END
+        IF i == 3 THEN
+            APPROS position, 50
+            MOVES position
+            BREAK
+; utför avplock
+            WAIT.EVENT , 0.2
+            DEPARTS 50
+        END
+
 
 
 .END

@@ -1,0 +1,17 @@
+﻿.PROGRAM piller()
+
+;Init,
+        SET sta_pos = TRANS(215.000,-75.000,65,0.000,180.000,0)
+        DECOMPOSE sta_array_pos[0] = sta_pos
+        SET aut_home = TRANS(sta_array_pos[0],sta_array_pos[1],sta_array_pos[2],sta_array_pos[3],sta_array_pos[4],sta_array_pos[5])
+
+        FOR i = 0 TO 3
+SET pick_cargo[i] = TRANS(sta_array_pos[0],sta_array_pos[1],sta_array_pos[2],sta_array_pos[3],sta_array_pos[4],sta_array_pos[5])
+
+        END
+
+
+
+
+.END
+

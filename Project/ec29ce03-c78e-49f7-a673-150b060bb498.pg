@@ -1,0 +1,19 @@
+﻿.PROGRAM set_location(loc, x)
+        IF x > 135 THEN
+            SET tmp_loc = loc
+            DECOMPOSE array_pos[0] = tmp_loc
+            SET loc = TRANS(x,array_pos[1],array_pos[2],array_pos[3],array_pos[4],0)
+            CALL pick3(loc)
+            BREAK
+        ELSE
+            SET tmp_loc_re = loc
+            DECOMPOSE array_res[0] = tmp_loc_re
+            SET loc = TRANS(240,array_res[1],array_res[2],array_res[3],array_res[4],0)
+            CALL place(loc)
+            BREAK
+
+        END
+
+
+.END
+

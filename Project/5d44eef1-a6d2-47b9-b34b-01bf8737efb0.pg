@@ -10,26 +10,39 @@
         ATTACH ()
         cycle_time = 0
         acc_time = 0
-        SPEED 70 MONITOR ALWAYS
-
+        SPEED 5 MONITOR ALWAYS
+        ;COARSE 100 ALWAYS
+        ;FINE 20 ALWAYS
         WHILE TRUE DO
             TIMER 3 = 0
             FOR i = 0 TO 3
-                CALL square(kub[i], i)
+                CALL loc_move(loc[i], i)
 
             END
 
             IF TIMER(3) > 1 THEN
-                cycle_time = cycle_time+1
-                acc_time = acc_time+TIMER(3)
-                TYPE "Timer: ", TIMER(3)
-                TYPE "Total driftid: ", acc_time
-                TYPE "Cycle time: ", cycle_time
 
-                IF acc_time > 500 THEN
-                    EXIT
+                x_pos = 235
+
+
+                WHILE cycle_time > 10 DO
+                    FOR i = 0 TO 3
+                        CALL set_location(loc[i], x_pos)
+                    END
+                    x_pos = x_pos-5
+                    IF x_pos <= 135 THEN
+                        EXIT
+                    END
+
                 END
             END
+            cycle_time = cycle_time+1
+            acc_time = acc_time+TIMER(3)
+            TYPE "Timer: ", TIMER(3)
+            TYPE "Total driftid: ", acc_time
+            TYPE "Cycle time: ", cycle_time
         END
+
+
 .END
 
