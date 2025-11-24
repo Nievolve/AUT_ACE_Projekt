@@ -1,0 +1,39 @@
+<SOAP-ENV:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Body>
+<a1:VPlusModule id="ref-1" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Ace.Server.Adept.Controllers.Memory/Ace">
+<Identifier xsi:type="a2:Guid" xmlns:a2="http://schemas.microsoft.com/clr/ns/System">
+<_a>-1918575900</_a>
+<_b>-22317</_b>
+<_c>19383</_c>
+<_d>161</_d>
+<_e>83</_e>
+<_f>9</_f>
+<_g>154</_g>
+<_h>115</_h>
+<_i>155</_i>
+<_j>54</_j>
+<_k>60</_k>
+</Identifier>
+<ControllerLink href="#ref-3"/>
+<ModuleName id="ref-4">pallertering</ModuleName>
+<Version>3</Version>
+<CustomSaveLocation id="ref-5"></CustomSaveLocation>
+</a1:VPlusModule>
+<a3:LinkedReference id="ref-3" xmlns:a3="http://schemas.microsoft.com/clr/nsassem/Ace.Server.Core.References/Ace">
+<Identifier xsi:type="a2:Guid" xmlns:a2="http://schemas.microsoft.com/clr/ns/System">
+<_a>288697405</_a>
+<_b>27693</_b>
+<_c>16757</_c>
+<_d>132</_d>
+<_e>222</_e>
+<_f>64</_f>
+<_g>21</_g>
+<_h>135</_h>
+<_i>222</_i>
+<_j>247</_j>
+<_k>173</_k>
+</Identifier>
+<CachedName id="ref-6">/i4-350L_0/Controller Settings</CachedName>
+</a3:LinkedReference>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

@@ -1,0 +1,11 @@
+﻿.PROGRAM pp(pp)
+
+        APPRO pp, 50
+        MOVES pp
+        BREAK
+        WAIT.EVENT , 0.2
+        DEPART 50
+
+
+.END
+

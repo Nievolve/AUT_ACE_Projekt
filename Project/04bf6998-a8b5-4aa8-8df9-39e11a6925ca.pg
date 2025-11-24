@@ -1,0 +1,55 @@
+﻿.PROGRAM p_piller()
+; Init
+        ATTACH ()
+        ;Varaible
+        done = FALSE
+        const_r = 50
+        const_z = 100
+        x = 0
+        y = 0
+
+        x_grid = 10 ; Antal hopp
+        y_grid = 10 ; Antal hopp
+
+        x_scale = 10 ;Avstånd på hopp
+        y_scale = 10 ;Avstånd på hopp
+
+
+        SET pick_pos[0] = TRANS(20,320,const_z,const_r)
+        SET pick_pos[1] = TRANS(120,320,const_z,const_r)
+        SET pick_pos[2] = TRANS(120,220,const_z,const_r)
+        SET pick_pos[3] = TRANS(20,220,const_z,const_r)
+
+        SET place_pos[0] = TRANS(70,-170,const_z,const_r)
+        SET place_pos[1] = TRANS(170,-170,const_z,const_r)
+        SET place_pos[2] = TRANS(170,-270,const_z,const_r)
+        SET place_pos[3] = TRANS(70,-270,const_z,const_r)
+
+
+        SET pick_frame = FRAME(pick_pos[0],pick_pos[1],pick_pos[3],pick_pos[0])
+        SET place_frame = FRAME(place_pos[0],place_pos[1],place_pos[3],place_pos[0])
+
+
+        WHILE NOT done DO
+
+
+            SET pick = pick_frame:TRANS(x*x_scale,y*y_scale)
+            SET place = place_frame:TRANS(x*x_scale,y*y_scale)
+
+            CALL pp(pick)
+            CALL pp(place)
+
+            x = x+1
+            IF x > x_grid THEN
+                x = 0
+                y = y+1
+            END
+            IF y > y_grid THEN
+                y = 0
+                done = TRUE
+            END
+
+        END
+        TYPE "Klar"
+.END
+

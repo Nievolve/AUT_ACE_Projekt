@@ -1,0 +1,16 @@
+﻿.PROGRAM pallertering()
+        ATTACH ()
+; Variable
+        x_offset = 0
+        y_offset = 0
+
+        SET gripper = TRANS(0,0,10,90) ;Offset vektyget 10mm z, 90 grader
+        TOOL gripper ;sätter gripper variablen som vektyg och värderna kommer utgöra nya basen
+        MOVE home
+        TOOL NULL
+        MOVE home
+        SET pallet = FRAME(kub[0],kub[1],kub[3],kub[0])
+        SET pick = pallet:TRANS(0,0) ; offset 
+
+.END
+

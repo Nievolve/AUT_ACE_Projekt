@@ -1,0 +1,13 @@
+﻿.PROGRAM offset_x_y(x, y)
+        WHILE NOT done DO
+            x_pos = 0
+            y_pos = 0
+            SET pick = work_area:TRANS(x)
+
+            IF x_pos > x THEN
+
+            END
+        END
+
+.END
+

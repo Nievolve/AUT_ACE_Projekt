@@ -1,0 +1,45 @@
+﻿.PROGRAM pick_place()
+; Första program som styr roboten
+
+; Variabler
+        ATTACH ()
+        SET pos1 = TRANS(265,185,100,0,180,0)
+        SET pos2 = TRANS(295,50,100,0,180,0)
+        SET gripper = TRANS(0,0,10) ;Offset för klo, 10 mm Z-axel
+        TOOL gripper
+
+
+        antal_flytt = 0
+        WHILE TRUE DO
+
+
+
+            APPROS pos1, 50 ; Åka över plats1
+            SIGNAL -19, 20 ;öppnar
+            MOVE pos1 ; Åka till plats1
+
+            BREAK
+            WAIT.EVENT , 1
+
+            SIGNAL 19, -20 ;Stänga gripper
+            DEPART 50 ; Åka över plats1
+
+            APPROS pos2, 50 ; Åka över plats1
+            MOVE pos2 ; Åka till plats1
+
+            BREAK
+            WAIT.EVENT , 1
+
+            SIGNAL -19, 20 ;öppnar
+            DEPART 50 ; Åka över plats2
+            antal_flytt = antal_flytt+1
+            TYPE "Flyttat: ", antal_flytt, " gånger"
+
+
+
+        END
+
+
+
+.END
+
