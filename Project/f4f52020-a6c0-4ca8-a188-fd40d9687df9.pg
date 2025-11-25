@@ -1,0 +1,41 @@
+﻿.PROGRAM workshop6()
+; workshop 6- a.pallet()
+; Calculate the distance of the nests from the taught locations "pal_origin", "pal_x" und "pal_y".
+        ATTACH ()
+        SET loc.origin = TRANS(200,150,100,0,180,0)
+        SET loc.x = TRANS(250,150,100,0,180,0)
+        SET loc.y = TRANS(200,200,100,0,180,0)
+        SET frame = FRAME(loc.origin,loc.x,loc.y,loc.origin)
+
+        x[0] = 0
+        y[0] = 0
+
+        x[1] = 10
+        y[1] = 10
+
+        x[2] = 2
+        y[2] = 2
+
+
+
+
+        WHILE TRUE DO
+            SET pick = frame:TRANS(x[0]*x[2],y[0]*y[2],,,180,0)
+            MOVES pick
+            BREAK
+
+            x[0] = x[0]+1
+            IF x[0] > x[1]-1 THEN
+                x[0] = 0
+                y[0] = y[0]+1
+            END
+            IF y[0] > y[1]-1 THEN
+                y[0] = 0
+                TYPE "Klar"
+                EXIT
+
+            END
+
+        END
+.END
+

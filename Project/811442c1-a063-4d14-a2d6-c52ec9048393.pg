@@ -1,0 +1,13 @@
+﻿.PROGRAM workshop5()
+; Workshop5 Relative transformations 2
+        ATTACH ()
+        auto = TRUE
+        r = 50 ;mm
+        SET center = TRANS(200,150,100,0,180,-45)
+        DO
+            FOR degree = 1 TO 360 STEP 5
+                MOVE center:TRANS(,,,,,degree):TRANS(r):TRANS(,,,,,-degree)
+            END
+        UNTIL NOT auto
+.END
+

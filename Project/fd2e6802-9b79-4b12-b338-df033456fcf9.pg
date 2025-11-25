@@ -1,0 +1,17 @@
+﻿.PROGRAM workshop4_1()
+; Workshop 4 Relative Transformations 1
+        x_offset = -200
+        y_offset = 100
+        z_offset = 50
+
+
+        SET loc[1] = TRANS(100,50,100,0,180,-45)
+; Sätt ut loc[2], loc[3], loc[4] utifrån abolutvärdet av loc[1]
+
+; workshop4_1 använd TRANS
+        SET loc[2] = loc[1]:TRANS(100)
+        SET loc[3] = loc[1]:TRANS(100,50)
+        SET loc[4] = loc[1]:TRANS(0,50)
+
+.END
+

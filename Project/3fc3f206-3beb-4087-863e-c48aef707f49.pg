@@ -33,9 +33,10 @@
             SIGNAL -19, 20 ;öppnar
             DEPART 50 ; Åka över plats2
             antal_flytt = antal_flytt+1
-            TYPE "Flyttat: ", antal_flytt, " gånger"
+            IF (antal_flytt < 1) OR (antal_flytt == 1) THEN
+                TYPE "Flyttat: ", antal_flytt, " gånger"
 
-
+            END
 
         END
 
