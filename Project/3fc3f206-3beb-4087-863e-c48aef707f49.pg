@@ -2,45 +2,52 @@
 ; Första program som styr roboten
 
 ; Variabler
-        ATTACH ()
-        SET pos1 = TRANS(265,185,100,0,180,0)
-        SET pos2 = TRANS(295,50,100,0,180,0)
-        SET gripper = TRANS(0,0,10) ;Offset för klo, 10 mm Z-axel
-        TOOL gripper
+        CALL init() ;Sätter 
+                        ; attach
+                        ; verktyg
+                        ; ready
 
+
+        open = 1
+        close = 0
+        auto = TRUE
 
         antal_flytt = 0
-        WHILE TRUE DO
+        WHILE auto DO
+
+
+            APPRO pick, 50
+            CALL gripper_ctrl(open)
+            MOVES pick
 
 
 
-            APPROS pos1, 50 ; Åka över plats1
-            SIGNAL -19, 20 ;öppnar
-            MOVE pos1 ; Åka till plats1
-
-            BREAK
-            WAIT.EVENT , 1
-
-            SIGNAL 19, -20 ;Stänga gripper
-            DEPART 50 ; Åka över plats1
-
-            APPROS pos2, 50 ; Åka över plats1
-            MOVE pos2 ; Åka till plats1
 
             BREAK
-            WAIT.EVENT , 1
+            WAIT.EVENT , 0.5
+            CALL gripper_ctrl(close)
 
-            SIGNAL -19, 20 ;öppnar
-            DEPART 50 ; Åka över plats2
+            DEPART 50
+
+            APPRO place, 50
+            BREAK
+            MOVE place
+            WAIT.EVENT , 0.5
+            CALL gripper_ctrl(open)
+            DEPART 50
+
+
+
             antal_flytt = antal_flytt+1
-            IF (antal_flytt < 1) OR (antal_flytt == 1) THEN
+            IF antal_flytt < 0 THEN
                 TYPE "Flyttat: ", antal_flytt, " gånger"
+
+
 
             END
 
+            auto = FALSE
+move pick
         END
-
-
-
 .END
 

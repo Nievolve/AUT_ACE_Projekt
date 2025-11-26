@@ -1,7 +1,0 @@
-﻿.PROGRAM flip_signal(x)
-
-        x = x*(-1)
-
-
-.END
-

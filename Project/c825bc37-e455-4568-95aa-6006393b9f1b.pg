@@ -8,7 +8,7 @@
 
         SET loc[2] = SHIFT(loc[1] BY 100)
         SET loc[3] = SHIFT(loc[1] BY 100,50)
-set loc[4] = SHIFT(loc[1] BY 0,50)
+        SET loc[4] = SHIFT(loc[1] BY 0,50)
 
 
 

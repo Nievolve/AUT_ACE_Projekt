@@ -30,7 +30,7 @@
       <Entity type="Device" subtype="AdeptCtrlr" id="ca1a7ef9-c3ee-4fdf-87ed-01616feeac0a" name="i4-350L_0" version="0" dateCreated="11/19/2025 09:41:12" dateLastModified="11/19/2025 09:41:13" trackingId="03ce7e0b-a6f7-40b0-b43d-d1852d68a18a" hash="c4d2c60db73400b8a8b3f917191eb2fe" DHS="1ff115234ed6defd5c7227179e0d72ad" TH="f5a260434827f0762f89c14b5aa5997f">
         <AccessInfos />
         <ChildEntities>
-          <Entity type="AdeptCtrlrSettings" subtype="" id="11352c3d-6c2d-4175-84de-401587def7ad" name="Controller Settings" version="0" dateCreated="11/19/2025 09:41:12" dateLastModified="11/24/2025 14:36:25" trackingId="e4e17793-343b-4627-897e-ddeec9368ddc" DN="Controller Settings" hash="f82d3f73a3a8c625ee584c412743a8ff">
+          <Entity type="AdeptCtrlrSettings" subtype="" id="11352c3d-6c2d-4175-84de-401587def7ad" name="Controller Settings" version="0" dateCreated="11/19/2025 09:41:12" dateLastModified="11/26/2025 14:32:07" trackingId="e4e17793-343b-4627-897e-ddeec9368ddc" DN="Controller Settings" hash="fc6dcf0262e2f7298c4cf390d1d83780">
             <AccessInfos />
             <ChildEntities />
           </Entity>
@@ -71,7 +71,7 @@
               <Entity type="AdeptCtrlrUserModule" subtype="VPlusModule" id="0abbf051-efec-4601-a0c6-b2ebebffd8ac" name="lektion" version="0" dateCreated="11/19/2025 13:00:58" dateLastModified="11/19/2025 13:01:41" trackingId="5a05008a-91ed-4908-87f0-d6fa10a9e0fa" DN="lektion" hash="3148d71b1b193a053b64b7f6c16b7101">
                 <AccessInfos />
                 <ChildEntities>
-                  <Entity type="VPlusModule" subtype="VPlusProgram" id="e665eaf3-193f-4818-86a4-3d85cce79f60" name="lektion" version="0" dateCreated="11/19/2025 13:00:58" dateLastModified="11/21/2025 12:46:15" trackingId="e827ac0e-82e4-41ea-b043-3573abf0605a" DN="lektion" hash="219e4ed0dc4b44e8a67f97affea81ea8">
+                  <Entity type="VPlusModule" subtype="VPlusProgram" id="e665eaf3-193f-4818-86a4-3d85cce79f60" name="lektion" version="0" dateCreated="11/19/2025 13:00:58" dateLastModified="11/26/2025 10:34:12" trackingId="e827ac0e-82e4-41ea-b043-3573abf0605a" DN="lektion" hash="97efbe8ac0e7352798a6b5a703c1bf4c">
                     <AccessInfos />
                     <ChildEntities />
                   </Entity>
@@ -123,14 +123,18 @@
                   </Entity>
                 </ChildEntities>
               </Entity>
-              <Entity type="AdeptCtrlrUserModule" subtype="VPlusModule" id="a2aeae02-5fda-401e-904b-0d13f7af0680" name="piller" version="0" dateCreated="11/21/2025 19:50:04" dateLastModified="11/24/2025 14:20:54" trackingId="3263d54d-f59e-4411-894b-d8897f7c9502" DN="piller" hash="77c577adef41d3394ca98930a7792cd1">
+              <Entity type="AdeptCtrlrUserModule" subtype="VPlusModule" id="a2aeae02-5fda-401e-904b-0d13f7af0680" name="piller" version="0" dateCreated="11/21/2025 19:50:04" dateLastModified="11/26/2025 12:29:29" trackingId="3263d54d-f59e-4411-894b-d8897f7c9502" DN="piller" hash="77c577adef41d3394ca98930a7792cd1">
                 <AccessInfos />
                 <ChildEntities>
-                  <Entity type="VPlusModule" subtype="VPlusProgram" id="17f76328-ac74-4787-b185-431e022b1d47" name="piller" version="0" dateCreated="11/21/2025 19:50:04" dateLastModified="11/24/2025 15:20:04" trackingId="d1cd7ecc-7fb1-4929-989e-f60d1e825e1a" DN="piller" hash="1ddfe62071efeea9d6109bce5e0521a2">
+                  <Entity type="VPlusModule" subtype="VPlusProgram" id="17f76328-ac74-4787-b185-431e022b1d47" name="piller" version="0" dateCreated="11/21/2025 19:50:04" dateLastModified="11/26/2025 13:30:57" trackingId="d1cd7ecc-7fb1-4929-989e-f60d1e825e1a" DN="piller" hash="6d8480c02eca442ed6bf1afd0a93333f">
                     <AccessInfos />
                     <ChildEntities />
                   </Entity>
-                  <Entity type="VPlusModule" subtype="VPlusProgram" id="a9db9570-fc11-44c4-b46a-1562f6babafb" name="flip_signal" version="0" dateCreated="11/24/2025 12:46:29" dateLastModified="11/24/2025 12:58:59" trackingId="a0674c40-b983-42d6-bc49-8959e20bb2fe" DN="flip_signal" hash="9439dee24372b2903ced337751ea9a42">
+                  <Entity type="VPlusModule" subtype="VPlusProgram" id="bfd87e40-c199-4c0f-bb2c-928411fe4992" name="ffl" version="0" dateCreated="11/26/2025 10:20:53" dateLastModified="11/26/2025 14:00:59" trackingId="2e48ca95-6138-4308-b8ee-bfc0b2d7432b" DN="ffl" hash="24148bef8326d737a3e4d01a59694812">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                  <Entity type="VPlusModule" subtype="VPlusProgram" id="31d9d6e1-d42f-4660-8cb8-e4f913a6f277" name="open_close" version="0" dateCreated="11/26/2025 10:23:51" dateLastModified="11/26/2025 12:29:29" trackingId="deb2ab7b-562e-4c4a-8c68-de3ec1d1de7c" DN="open_close" hash="b7c7cdd51ca513c039d028d1c2d51dad">
                     <AccessInfos />
                     <ChildEntities />
                   </Entity>
@@ -162,23 +166,35 @@
                   </Entity>
                 </ChildEntities>
               </Entity>
-              <Entity type="AdeptCtrlrUserModule" subtype="VPlusModule" id="9bcd7e61-323d-4622-a6b5-6f1d7af0077f" name="pick_place" version="0" dateCreated="11/24/2025 13:27:40" dateLastModified="11/24/2025 14:15:22" trackingId="ea63400a-c4c5-4ff1-9742-48fc34159b80" DN="pick_place" hash="8089d99742c9ecaa4e2e9807cf92392d">
+              <Entity type="AdeptCtrlrUserModule" subtype="VPlusModule" id="9bcd7e61-323d-4622-a6b5-6f1d7af0077f" name="pick_place" version="0" dateCreated="11/24/2025 13:27:40" dateLastModified="11/26/2025 14:55:33" trackingId="ea63400a-c4c5-4ff1-9742-48fc34159b80" DN="pick_place" hash="8089d99742c9ecaa4e2e9807cf92392d">
                 <AccessInfos />
                 <ChildEntities>
-                  <Entity type="VPlusModule" subtype="VPlusProgram" id="3fc3f206-3beb-4087-863e-c48aef707f49" name="pick_place" version="0" dateCreated="11/24/2025 13:27:40" dateLastModified="11/25/2025 12:38:01" trackingId="b7545ca8-046d-4a40-953f-caf43de32e3c" DN="pick_place" hash="b93713cad9aa666f67824c3f31ab9dc2">
+                  <Entity type="VPlusModule" subtype="VPlusProgram" id="3fc3f206-3beb-4087-863e-c48aef707f49" name="pick_place" version="0" dateCreated="11/24/2025 13:27:40" dateLastModified="11/26/2025 14:55:33" trackingId="b7545ca8-046d-4a40-953f-caf43de32e3c" DN="pick_place" hash="796ac292f342878fadac79952a5a48e1">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                  <Entity type="VPlusModule" subtype="VPlusProgram" id="7b793f19-1b95-456c-b804-d3f9023177f6" name="gripper_ctrl" version="0" dateCreated="11/26/2025 10:49:06" dateLastModified="11/26/2025 14:41:20" trackingId="65da1559-ec5e-4fd4-bbac-fb2023aa47ef" DN="gripper_ctrl" hash="83ad8d3741acef83be94a589fd1d6b2c">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                  <Entity type="VPlusModule" subtype="VPlusProgram" id="fdddf0b1-479d-461c-96a8-8d73fd30093f" name="init" version="0" dateCreated="11/26/2025 10:51:17" dateLastModified="11/26/2025 14:23:35" trackingId="cae24361-0871-4910-8347-425ef2907440" DN="init" hash="b5115d22e450de7867c23d32134e7f1a">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                  <Entity type="VPlusModule" subtype="VPlusProgram" id="1be18a48-777c-4274-ab99-2d9658f380e6" name="move" version="0" dateCreated="11/26/2025 14:02:25" dateLastModified="11/26/2025 14:32:07" trackingId="6987090e-1d39-4c3d-9e4e-a592a0574000" DN="move" hash="e21ce82e12dd843e6b874e8495882873">
                     <AccessInfos />
                     <ChildEntities />
                   </Entity>
                 </ChildEntities>
               </Entity>
-              <Entity type="AdeptCtrlrUserModule" subtype="VPlusModule" id="ae052729-c23d-41df-bfa4-9d8946e9838a" name="workshop4_1" version="0" dateCreated="11/25/2025 12:10:49" dateLastModified="11/25/2025 12:38:01" trackingId="2defd13d-6a63-4896-8ab7-5f136930c629" DN="workshop4_1" hash="f71402276fb9f249e90e23e73496ae00">
+              <Entity type="AdeptCtrlrUserModule" subtype="VPlusModule" id="ae052729-c23d-41df-bfa4-9d8946e9838a" name="workshop4_1" version="0" dateCreated="11/25/2025 12:10:49" dateLastModified="11/26/2025 13:30:57" trackingId="2defd13d-6a63-4896-8ab7-5f136930c629" DN="workshop4_1" hash="858134ca8d6fdc5cba22ddfac7ee984b">
                 <AccessInfos />
                 <ChildEntities>
                   <Entity type="VPlusModule" subtype="VPlusProgram" id="fd2e6802-9b79-4b12-b338-df033456fcf9" name="workshop4_1" version="0" dateCreated="11/25/2025 12:10:49" dateLastModified="11/25/2025 14:04:35" trackingId="93254e4d-9908-4f2c-9746-0436a46776d1" DN="workshop4_1" hash="dd171668df0dff1ffbb8094d168d22e2">
                     <AccessInfos />
                     <ChildEntities />
                   </Entity>
-                  <Entity type="VPlusModule" subtype="VPlusProgram" id="c825bc37-e455-4568-95aa-6006393b9f1b" name="workshop4_2" version="0" dateCreated="11/25/2025 12:12:49" dateLastModified="11/25/2025 12:38:01" trackingId="b3818d7f-0cee-42a3-8196-52e8c80c3313" DN="workshop4_2" hash="928232b8365c4eedc659cd3164cd7280">
+                  <Entity type="VPlusModule" subtype="VPlusProgram" id="c825bc37-e455-4568-95aa-6006393b9f1b" name="workshop4_2" version="0" dateCreated="11/25/2025 12:12:49" dateLastModified="11/26/2025 13:30:57" trackingId="b3818d7f-0cee-42a3-8196-52e8c80c3313" DN="workshop4_2" hash="f11a9c4875ae1e37b8ebb3cc7e54a251">
                     <AccessInfos />
                     <ChildEntities />
                   </Entity>
@@ -208,7 +224,7 @@
               </Entity>
             </ChildEntities>
           </Entity>
-          <Entity type="AdeptCtrlrVariables" subtype="" id="e7b671cb-78fd-446d-9cad-b1a574e5b624" name="Variables" version="0" dateCreated="11/19/2025 09:41:12" dateLastModified="11/24/2025 15:20:04" trackingId="eba7c39d-369e-44e7-9a94-59cc46e26767" DN="Variables" hash="8fa18a4846390cbffc4682c6ae70d3ec">
+          <Entity type="AdeptCtrlrVariables" subtype="" id="e7b671cb-78fd-446d-9cad-b1a574e5b624" name="Variables" version="0" dateCreated="11/19/2025 09:41:12" dateLastModified="11/26/2025 14:41:20" trackingId="eba7c39d-369e-44e7-9a94-59cc46e26767" DN="Variables" hash="d475b2ffa6776f9b0b37bca5f6f78a02">
             <AccessInfos />
             <ChildEntities />
           </Entity>

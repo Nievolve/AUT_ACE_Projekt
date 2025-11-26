@@ -1,0 +1,13 @@
+﻿.PROGRAM init()
+; program
+        ATTACH ()
+        SPEED 20 MONITOR ALWAYS
+        SET tool.gripper = TRANS(0,0,90) ; 90 vänster , 110 höger
+        TOOL tool.gripper
+        RIGHTY
+        READY
+
+
+
+.END
+

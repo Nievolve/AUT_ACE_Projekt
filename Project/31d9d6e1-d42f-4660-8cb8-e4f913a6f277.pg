@@ -1,0 +1,10 @@
+﻿.PROGRAM open_close(cmd)
+
+
+        IF cmd THEN     ;True, öppna
+            SIGNAL -19, 20
+        ELSE            ; falseStänger
+            SIGNAL -20, 19
+        END
+.END
+

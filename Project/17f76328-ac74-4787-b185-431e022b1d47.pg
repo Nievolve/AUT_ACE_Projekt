@@ -5,8 +5,18 @@
 
         SET rest = TRANS()
         auto = TRUE
+        tool_x = 0
+        tool_y = 0
+        tool_z = 0
+        antal_piller = 7
+
+        CALL gripper(tool_x, tool_y, tool_z)
+
+        kub = 100 ;mm
+
+
 ; Variable
-        piller = 3 ; Antal "piller" roboten kan distrubera.
+        piller = antal_piller ; Antal "piller" roboten kan distrubera.
 
         x = 0
         y = 0
@@ -29,13 +39,13 @@
         FOR i = 1 TO 2
             DECOMPOSE places[] = place_pos[0]
             IF i == 1 THEN
-                SET place_pos[i] = TRANS(places[0]+50,places[1],places[2])
+                SET place_pos[i] = TRANS(places[0]+kub,places[1],places[2])
             END
             IF i == 2 THEN
-                SET place_pos[i] = TRANS(places[0],places[1]-50,places[2])
+                SET place_pos[i] = TRANS(places[0],places[1]-kub,places[2])
             END
         END
-        SET reload = TRANS(341.490,-12.197,150.000,0.000,180.000,180.000)
+        SET reload = TRANS(341.49,-12.197,150,0,180,180)
 
 
 
@@ -44,30 +54,30 @@
 
         SET pill_place = workframe:TRANS(x*x_space,y*y_space)
 ; Loop
+
         WHILE auto DO
+            TIMER 3 = 0
 
             SET pill_place = workframe:TRANS(x*x_space,y*y_space)
-            APPRO pill_place, 50
-            MOVES pill_place
+            CALL ffl(pill_place)
             TYPE "Placerat (x/y): "
             TYPE x, y
-            TYPE
-            BREAK
-            WAIT.EVENT , 0.2
-            DEPART 50
+
             piller = piller-1
             x = x+1
+
             TYPE "Piller kvar: ", piller
             IF piller == 0 THEN
                 TYPE "Reloading"
                 APPRO reload, 50
                 MOVES reload
                 BREAK
+                SIGNAL -19, 20 ;öppna
                 WAIT.EVENT , 2
                 DEPART 50
                 BREAK
 
-                piller = 3
+                piller = antal_piller
             END
             IF x > x_grid THEN
                 x = 0
@@ -80,7 +90,11 @@
             END
 
         END
-
+        cycle_timer = TIMER(3)
+        acc_timer = acc_timer+cycle_timer
+        TYPE "Tid:"
+        TYPE "Cycletid : ", cycle_timer, " s"
+        TYPE "Total: ", acc_timer, " s"
         TYPE "klar"
 
 .END

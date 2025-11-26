@@ -1,0 +1,23 @@
+﻿.PROGRAM ffl(loc, cmd)
+; program
+
+        APPRO loc, 50
+
+        MOVES loc
+        IF cmd THEN
+
+            CALL open_close(TRUE)
+        END
+
+        BREAK
+        WAIT.EVENT , 2
+        DEPART 50
+
+        IF NOT cmd THEN
+            CALL open_close(FALSE)
+        END
+
+
+
+.END
+

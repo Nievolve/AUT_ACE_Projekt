@@ -1,0 +1,24 @@
+﻿.PROGRAM move(loc, cmd)
+; program
+
+        APPRO loc, 50
+
+        MOVES loc
+        BREAK
+        IF cmd THEN
+
+            CALL open_close(TRUE)
+        END
+
+        BREAK
+        WAIT.EVENT , 0.5
+        DEPART 50
+
+        IF NOT cmd THEN
+            CALL open_close(FALSE)
+        END
+
+
+
+.END
+
